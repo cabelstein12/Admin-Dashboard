@@ -10,33 +10,49 @@
 <body>
     <div class="container">
         <div class="header">
-            <input type="search" name="search-bar" id="search-bar">
-            <button type="button">Search</button>
-            <img src="" alt="avatar">
-            <p>John Doe</p>
-            <img src="" alt="avatar">
-            <p>Hi there, John Doe</p>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+
+            <div class="search-group">
+                <a href=""><img src="./imgs/search.svg" alt="search" srcset="" id="search-icon"></a>
+                <input type="search" name="search-bar" id="search-bar">
+            </div>
+            <div class="profile-group">
+                <a href=""><img src="./imgs/bell.svg" alt="notif. bell"> </a>   
+                <img src="./imgs/avataaars.svg" alt="avatar" id="avatar-icon">
+                <h2 >John Doe</h2>
+            </div>
+            <div class="greeting-group">
+
+                <img src="./imgs/avataaars.svg" alt="avatar" id="large-avatar-icon">
+                <div class="user">
+                    <p class="user-greeting">Hi there,</p>
+                    <h3 class="user-profile-name">John Doe (@JDOE)</h3>
+                </div>
+            </div>
+            <div class="user-actions">
+
+                <button class="header-button">New</button>
+                <button class="header-button">Upload</button>
+                <button class="header-button">Share</button>
+            </div>
         </div>
         <div class="sidebar">
-            <div class="logo">LOGO HERE</div>
+            <h2 class="logo">DASHBOARD</h2>
 
             <div class="user-tools">
-                <button>Home</button>
-                <button>Profile</button>
-                <button>Messages</button>
-                <button>History</button>
-                <button>Tasks</button>
-                <button>Communities</button>
+                <a href="">Home</a>
+                <a href="">Profile</a>
+                <a href="">Messages</a>
+                <a href="">History</a>
+                <a href="">Tasks</a>
+                <a href="">Communities</a>
             </div>
             <div class="app-tools">
-                <button>Settings</button>
-                <button>Support</button>
-                <button>Privacy</button>
+                <a href="">Settings</a>
+                <a href="">Support</a>
+                <a href="">Privacy</a>
             </div>
         </div>
+        
 
         <div class="content">
 
@@ -51,21 +67,21 @@
             </div>
 
             <div class="announcements">
-                <p class="head">Site Maintenance</p>
+                <h3 class="head">Site Maintenance</h3>
                 <p class="text">
                     Lorem ipsum dolor sit amet consectetur 
                     adipisicing elit. Nobis suscipit excepturi vero necessitatibus 
                     hic, dolorem voluptate aspernatur minus impedit soluta quidem officiis 
                     voluptatibus eveniet repellat, est magnam aperiam quo quia!
                 </p>
-                <p class="head">Community Share Day</p>
+                <h3 class="head">Community Share Day</h3>
                 <p class="text">
                     Lorem ipsum dolor sit amet consectetur 
                     adipisicing elit. Nobis suscipit excepturi vero necessitatibus 
                     hic, dolorem voluptate aspernatur minus impedit soluta quidem officiis 
                     voluptatibus eveniet repellat, est magnam aperiam quo quia!
                 </p>
-                <p class="head">Updated Privacy Policy</p>
+                <h3 class="head">Updated Privacy Policy</h3>
                 <p class="text">
                     Lorem ipsum dolor sit amet consectetur 
                     adipisicing elit. Nobis suscipit excepturi vero necessitatibus 
