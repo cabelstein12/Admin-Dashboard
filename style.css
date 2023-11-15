@@ -20,8 +20,8 @@ background-color: rgba(230, 230, 230, 0.693);
     grid-column-start: 2 ;
     max-height: min-content;
     display: grid;
-    grid-template-rows: 3rem 9rem;
-    grid-template-columns: 3fr  500px;
+    grid-template-rows: 3rem 7rem;
+    grid-template-columns: 3fr 1fr;
     box-shadow: var(--shadow); 
 }
 
@@ -44,6 +44,8 @@ background-color: rgba(230, 230, 230, 0.693);
     width: 50px;
     height: 50px;
     border-radius: 20px;
+    padding-bottom: 5px;
+    margin-top: 3px;
 }
 
 #large-avatar-icon{
@@ -66,7 +68,7 @@ background-color: rgba(230, 230, 230, 0.693);
 
 
 #notif-bell {
-    padding-top: 11px;
+    margin-top: 11px;
 }
 
 .user > h3,
@@ -77,14 +79,16 @@ background-color: rgba(230, 230, 230, 0.693);
 
 .profile-group {
     display: grid;
-    grid-template-columns: 69px 128px 150px 22%;
+    grid-template-columns: 4rem 5rem 8rem;
     align-items: center;
     justify-items: center;
 }
 .header-button {
     border: none;
-    padding: 1rem 2rem;
-    margin: 1rem;
+    padding: 5px;
+    margin: 15px;
+    width: 85px;
+    height: 52px;
     text-decoration: none;
     background: #0069ed;
     color: #ffffff;
@@ -102,8 +106,8 @@ background-color: rgba(230, 230, 230, 0.693);
 
 .user-actions {
     display: flex;
-    margin: 1em;
-    padding: 1em;
+    margin-top: 1em;
+    /* padding-top: 1em; */
 }
 
 .sidebar {
@@ -132,18 +136,27 @@ background-color: rgba(230, 230, 230, 0.693);
     border-radius: 10px;
 }
 
-.sidebar-icons:hover {
-    box-shadow: 5px 5px 5px rgba(244, 244, 244, 0.42);
-    opacity: 0.7;
+
+
+.user-tools > a:hover,
+.app-tools > a:hover {
+    transform: translateX(25%);
+    color: #ffffff;
     transition: 250ms;
+    padding:0px;
+    width: max-content;
 }
 
 
-#search-icon:hover,
-#notif-bell:hover,
-#avatar-icon:hover {
-    box-shadow: 5px 5px 5px rgba(99, 99, 99, 0.501);
-    transition: 250ms;
+
+
+#search-icon:active,
+#notif-bell:active,
+#avatar-icon:active {
+    border-right: 1px solid #434343c6;
+    border-left: 1px solid #43434345;
+    border-bottom: 1px solid #43434345;
+    border-top: 1px solid #43434345;
 }
 
 .user-tools,
@@ -194,21 +207,26 @@ background-color: rgba(230, 230, 230, 0.693);
 
 .card:hover{
     border:none;
-    border-left: #d4ff0091 6px solid;
+    border-left: #d4d40091 6px solid;
     transition: 200ms ease-in-out;
 }
 
 .project-title,
 .head{
     text-decoration: underline 0.15em rgba(0, 0, 0, 0);
-    text-underline-offset: 0.2em;
+    text-underline-offset: -0.5em;
     transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
 
 .card:hover > .project-title,
-.head:hover{
+.announcement:hover > .head{
     text-decoration-color: rgb(45, 45, 45);
-    text-underline-offset: 0.4em;
+    text-underline-offset: 0.2em;
+}
+
+.announcements a{
+    text-decoration: none;
+    color: initial;
 }
 
 .trending,
